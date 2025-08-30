@@ -23,6 +23,6 @@ export class MessagesRepository {
       id,
       content: message
     }
-    await writeFile('messages.json', 'utf8')
+    await writeFile('messages.json', JSON.stringify(messages), "utf-8")
   }
 }
