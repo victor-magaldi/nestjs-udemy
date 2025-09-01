@@ -1,3 +1,4 @@
+import { Injectable } from "@nestjs/common";
 import { readFile, writeFile } from "node:fs/promises";
 export interface Message {
   id: string | number;
@@ -7,7 +8,6 @@ export interface Message {
 export interface MessagesMap {
   [id: string]: Message;
 }
-
 export class MessagesRepository {
   private db: MessagesMap;
   constructor() {
