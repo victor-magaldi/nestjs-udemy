@@ -15,7 +15,10 @@ export class UsersService {
   }
 
   findOne(id: number) {
-    return this.repo.findOneBy({ id })
+    return this.repo.findOne({
+      where: { id },
+      select: ['id', 'email']
+    })
   }
   find() {
 
