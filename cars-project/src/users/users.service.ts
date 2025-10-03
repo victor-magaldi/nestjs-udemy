@@ -20,8 +20,11 @@ export class UsersService {
       select: ['id', 'email']
     })
   }
-  find() {
-
+  find(email: string) {
+    return this.repo.findOne({
+      where: { email },
+      select: ['id', 'email']
+    })
   }
   udpate() {
 
