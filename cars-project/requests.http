@@ -13,8 +13,17 @@ Content-Type: application/json
 
 
 ### Get all users by e-mail
-GET http://localhost:3000/auth?email=victor@2247.com
+GET http://localhost:3000/auth?email=victor@2250.com
 Content-Type: application/json
+
+### Update User
+PATCH http://localhost:3000/auth/2
+Content-Type: application/json
+
+{
+  "email":"victor@2250.com",
+  "password":"mysecretkey"
+}
 
 ### Delete user by id  
 DELETE  http://localhost:3000/auth/3
