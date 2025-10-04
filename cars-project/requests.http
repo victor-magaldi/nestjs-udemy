@@ -15,3 +15,7 @@ Content-Type: application/json
 ### Get all users by e-mail
 GET http://localhost:3000/auth?email=victor@2247.com
 Content-Type: application/json
+
+### Delete user by id  
+DELETE  http://localhost:3000/auth/3
+Content-Type: application/json
