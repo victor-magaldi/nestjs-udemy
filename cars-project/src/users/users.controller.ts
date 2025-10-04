@@ -13,7 +13,11 @@ export class UsersController {
   }
 
   @Get(`/:id`)
-  async findUser(@Param('id') id: string) {
+  findUser(@Param('id') id: string) {
     return this.usersService.findOne(Number(id))
+  }
+  @Get()
+  findAllUsers(@Query('email') email: string) {
+    return this.usersService.find(email)
   }
 }
