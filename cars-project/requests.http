@@ -3,16 +3,16 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email":"victor@2247.com",
+  "email":"victor@05-10.com",
   "password":"mysecretkey"
 }
 
 ### Get User By ID
-GET http://localhost:3000/auth/2
+GET http://localhost:3000/auth/5
 Content-Type: application/json
 
 ### Get all users by e-mail
-GET http://localhost:3000/auth?email=victor@2250.com
+GET http://localhost:3000/auth?email=victor@05-10.com
 Content-Type: application/json
 
 ### Update User
